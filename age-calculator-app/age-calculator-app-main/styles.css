@@ -1,0 +1,150 @@
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Off-white);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+
+.card{
+    background-color: var(--White);
+    border-radius: 1rem 1rem 8rem 1rem;
+    width: 420px;
+    padding: 30px;
+    max-width: 80%;
+    position: relative;
+}
+
+
+input{
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--Light-grey);
+    outline: none;
+}
+
+input:hover{
+    border: 1px solid var(--Purple);
+    cursor: pointer;
+}
+
+.error-message{
+    font-size: 10px;
+}
+
+small{
+    color: var(--Light-red);
+}
+
+.up-part{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--Off-white);
+    margin-right: 20px;
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.input-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-action{
+    width: 65px;
+    height: 65px;
+    border: none;
+    background-color: var(--Purple);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 110px;
+}
+
+.btn-action > img{
+    width: 40px;
+    height: 40px;
+}
+
+.btn-action:focus{
+    background-color: var(--Off-black);
+}
+
+span {
+    font-size: 14px;
+    color: var(--Smokey-grey);
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.view-year{
+    color: var(--Purple);
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.view-month{
+    color: var(--Purple);
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.view-day{
+    color: var(--Purple);
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.output{
+    /* margin-left: 10px; */
+    margin-right: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    input{
+        width: 80%;
+    }
+    .btn-action{
+        right: 45%;
+        /* top: 25%; */
+        width: 55px;
+        height: 55px;
+
+    }
+    .btn-action > img{
+        width: 35px;
+        height: 35px;
+    }
+
+}

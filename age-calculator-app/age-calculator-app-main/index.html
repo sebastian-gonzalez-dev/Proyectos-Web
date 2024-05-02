@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+<article class="card">
+
+  <div class="up-part">
+    <div class="container">
+        <span>Day</span>
+        <input type="number" id="day">
+        <small class="error-message hide error-message-day">El campo es requerido</small>
+        <!-- mensaje error -->
+    </div>
+
+    <div class="container">
+        <span>Month</span>
+        <input type="number" id="month">
+        <small class="error-message hide error-message-month">El campo es requerido</small>
+        <!-- mensaje error -->
+    </div>
+
+    <div class="container">
+        <span>Year</span>
+        <input type="number" id="year">
+        <small class="error-message hide error-message-year">El campo es requerido</small>
+        <!-- mensaje error -->
+    </div>
+  </div>
+
+    <!-- LINEA DIVISORIA -->
+
+    <button class="btn-action">
+      <img src="assets/images/icon-arrow.svg" alt="icon-arrow" class="icon-arrow" id="btn-arrow">
+    </button>
+
+    <div class="output">
+      <h1><span class="view-year">--</span>years</h1>
+      <h1><span class="view-month">--</span>months</h1>
+      <h1><span class="view-day">--</span>days</h1>
+    </div>
+ 
+</article>
+  
+  <script src="script.js"></script>
+</body>
+</html>
