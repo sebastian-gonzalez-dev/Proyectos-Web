@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: gray;
+}
+
+.cards{
+    width: 90%;
+    height: 500px;
+    margin: 200px auto;
+    font-size: 0;
+}
+.card{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    height: 100%;
+    padding-top: 3em;
+    padding-left: 2em;
+    font-size: 16px;
+    color: hsl(0 0% 100% / 0.75);
+    
+}
+.card__orange{
+    background-color: hsl(31,77%,52%);
+}
+.card__cyan{
+    background-color: hsl(184,100%,22%);
+}
+.card__dark{
+    background-color: hsl(179,100%,13%);
+}
+
+.card__title{
+    font-size: 2.5rem;
+}
+
+.card_description{
+    width: 200px;
+}
+
+.card__cta{
+    position: absolute;
+    padding: 0.7em 2em;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 1.2em;
+    margin-top: 6em;
+}
