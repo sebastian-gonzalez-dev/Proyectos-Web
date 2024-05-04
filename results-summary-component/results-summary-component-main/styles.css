@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap'); 
  /* Primary */
 :root{
 --Light-red: hsl(0, 100%, 67%);
@@ -32,6 +33,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;;
 }
 
 .card{
@@ -43,7 +45,7 @@ body{
 }
 
 .result{
-    background-color: var(--Light-royal-blue);
+    background: linear-gradient(360deg, var(--Light-royal-blue), var(--Light-slate-blue));
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -62,7 +64,7 @@ h2,h3{
 .circle{
     display: flex;
     flex-direction: column;
-    background-color: var(--Cobalt-blue);
+    background: linear-gradient(360deg, var(--Light-slate-blue), var(--Light-royal-blue));
     width: 110px;
     height: 110px;
     gap: 0.5rem;
@@ -110,7 +112,8 @@ h2,h3{
     color: white;
     border-radius: 1.2rem;
     border: none;
-    margin-top: 6.5rem;
+    margin-top: 5rem;
+    cursor: pointer;
 }
 
 .container{
@@ -142,7 +145,7 @@ img{
 
 .memory{
     display: flex;
-    color: yellow;
+    color: #D2D859;
     gap: 8px;
 }
 
@@ -176,6 +179,10 @@ background-color: #E7FDCF;
 
 span{
     font-weight: bold;
+}
+
+.btn-continue:hover{
+    background-color: var(--Cobalt-blue);
 }
 
 @media (min-width: 768px){
